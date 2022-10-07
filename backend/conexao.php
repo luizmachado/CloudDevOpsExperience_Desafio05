@@ -2,7 +2,7 @@
 $servername = "";
 $username = "root";
 $password = "Senha123";
-$database = "meubanco";
+$database = "app_bd";
 
 // Criar conexão
 
