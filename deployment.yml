@@ -41,14 +41,12 @@ spec:
         app: mysql
     spec:
       containers:
-      - image: luizmachado/desafio5_database:1.0
-        args:
-        - "--ignore-db-dir=lost+found"
+      - name: mysql
+        image: luizmachado/desafio5_database:1.0
         imagePullPolicy: Always
-        name: mysql
         ports:
         - containerPort: 3306
-          name: mysql
+
         volumeMounts:
         - name: mysql-dados
           mountPath: /var/lib/mysql/
